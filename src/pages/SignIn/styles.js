@@ -49,6 +49,7 @@ export const Form = styled.form`
     display: flex;
     flex-direction: column;
     gap: 8px;
+
   }
 
   > Button:nth-last-child(2){

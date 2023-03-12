@@ -4,17 +4,17 @@ import { AiFillStar } from 'react-icons/ai'
 
 import { Tag } from '../Tag'
 
-export function MovieDetails({ data, ...rest }) {
+export function MovieDetails({ data, onClick, ...rest}) {
   return (
-    <Container>
+    <Container onClick={onClick} {...rest}>
       <h1>{data.title}</h1>
 
       <h2>
-        <AiFillStar className={data.stars >= 1 ? 'rated' : ''} />
-        <AiFillStar className={data.stars >= 2 ? 'rated' : ''} />
-        <AiFillStar className={data.stars >= 3 ? 'rated' : ''} />
-        <AiFillStar className={data.stars >= 4 ? 'rated' : ''} />
-        <AiFillStar className={data.stars >= 5 ? 'rated' : ''} />
+        <AiFillStar className={data.rating >= 1 ? 'rated' : ''} />
+        <AiFillStar className={data.rating >= 2 ? 'rated' : ''} />
+        <AiFillStar className={data.rating >= 3 ? 'rated' : ''} />
+        <AiFillStar className={data.rating >= 4 ? 'rated' : ''} />
+        <AiFillStar className={data.rating >= 5 ? 'rated' : ''} />
       </h2>
 
       <p>{data.description}</p>
@@ -23,7 +23,7 @@ export function MovieDetails({ data, ...rest }) {
         <Tags>
           {data.tags.map(tag => <Tag key={tag.id} title={tag.name} />)}
         </Tags>}
-
+        
     </Container>
   )
 }

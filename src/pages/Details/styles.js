@@ -13,6 +13,9 @@ export const Container = styled.div`
     margin: 0 auto;
 
     > header {
+      display: flex;
+      justify-content: space-between;
+
       margin: 40px 0;
     }
 

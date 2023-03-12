@@ -69,6 +69,10 @@ export const Avatar = styled.div`
   position: relative;
 
   > img {
+    width: 186px;
+    height: 186px;
+
+
     border-radius: 50%;
   }
 

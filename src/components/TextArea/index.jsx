@@ -1,8 +1,8 @@
 import { Container } from './styles'
 
-export function TextArea({value, ...rest}) {
+export function TextArea({value, className, ...rest}) {
   return (
-    <Container {...rest}>
+    <Container {...rest} className={className}>
     </Container>
   )
 }

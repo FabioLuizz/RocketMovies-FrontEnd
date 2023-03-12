@@ -4,7 +4,7 @@ export function Input({ icon: Icon, ...rest }) {
   return (
     <Container>
       {Icon && <Icon size={16} />}
-      <input {...rest} />
+      <input {...rest} maxLength={40}/>
     </Container>
   )
 }

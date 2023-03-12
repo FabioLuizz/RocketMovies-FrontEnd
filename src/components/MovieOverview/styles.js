@@ -26,6 +26,9 @@ export const Section = styled.div`
   gap: 19px;
 
   > h1 {
+    display: flex;
+    justify-content: space-between;
+
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
@@ -70,7 +73,7 @@ export const Brand = styled.div`
 export const Time = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 
   margin-top: 24px;
 
@@ -82,14 +85,29 @@ export const Time = styled.div`
   > svg {
     width: 15;
     height: 16px;
+    
 
     color: ${({ theme }) => theme.COLORS.RED};
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding-left: 16px;
+
+    svg {
+      color: ${({ theme }) => theme.COLORS.RED};
+    }
   }
 `
 
 export const Tags = styled.div`
   display: flex;
   gap: 8px;
+
+  flex-wrap: wrap;
 
   margin-top: 40px;
 `

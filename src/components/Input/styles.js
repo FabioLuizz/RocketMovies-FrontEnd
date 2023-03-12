@@ -14,7 +14,7 @@ export const Container = styled.div`
   color: ${({theme}) => theme.COLORS.GRAY_100};
 
   > input {
-    font-size: 16px;
+    font-size: 14px;
     font-family: Roboto slab;
 
     background-color: ${({theme}) => theme.COLORS.GRAY_200}; 

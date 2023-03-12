@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1121px;
-  height: 222px;
+  min-height: 220px;
+
+  overflow-y: hidden;
 
   border-radius: 16px;
 
@@ -16,6 +18,10 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
 
     margin: 32px 0px 8px 32px;
+
+    :hover {
+      cursor: pointer;
+    }
   }
 
   > h2 {
@@ -62,14 +68,16 @@ export const Container = styled.div`
   }
 
   :hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
+  }
 `
 
 export const Tags = styled.div`
   display: flex;
+  flex-wrap: wrap;
 
   margin: 30px 32px 32px 32px;
 
   gap: 8px;
+
 `

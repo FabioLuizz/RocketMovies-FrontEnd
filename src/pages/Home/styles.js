@@ -42,12 +42,13 @@ export const Main = styled.div`
   }
 `
 export const Section = styled.div`
-  height: 63vh;
+  height: 60vh;
+
 
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-
+  
   margin-top: 40px;
   margin-bottom: 40px;
   gap: 24px;

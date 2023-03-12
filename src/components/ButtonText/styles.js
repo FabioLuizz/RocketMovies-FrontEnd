@@ -5,6 +5,7 @@ export const Container = styled.button`
   font-weight: 400;
   line-height: 21px;
   align-items: center;
+  display: flex;
 
   gap: 6px;
 
@@ -15,5 +16,6 @@ export const Container = styled.button`
 
   > svg {
     margin-right: 6px;
+
   }
 `

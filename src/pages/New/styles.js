@@ -15,17 +15,29 @@ export const Container = styled.div`
   > main {
     grid-area: content;
     overflow-y: auto;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.COLORS.RED};
+      border-radius: 10px;
+    }
+
   }
 `
 
 export const Form = styled.form`
   max-width: 1130px;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   margin: 40px auto;
-  
+
   > header {
     > h1 {
       color: ${({ theme }) => theme.COLORS.WHITE};
@@ -39,7 +51,9 @@ export const Section = styled.div`
   gap: 40px;
   margin-top: 40px;
 
-  input {
+  max-width: 1130px;
+
+  #TextArea {
     font-family: Roboto;
   }
 `
@@ -48,6 +62,8 @@ export const NewMovie = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 40px;
+
+  width: 100%;
 
   > p {
     font-size: 20px;
@@ -63,23 +79,26 @@ export const NewMovie = styled.div`
 
   > div {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+
+    gap: 3px;
 
     width: 100%;
-    height: 88px;
 
     padding: 16px;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_BLACK_900};
-    
+
     border-radius: 10px;
   }
 `
 
 export const Footer = styled(Link)`
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  outline: none;
 
   margin-top: 40px;
 

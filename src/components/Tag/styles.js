@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 121px;
+  width: 125px;
   height: 24px;
 
   display: flex;
@@ -14,13 +14,11 @@ export const Container = styled.div`
   font-family: Roboto, sans-serif;
 
   border-radius: 8px;
-  background: ${({theme}) => theme.COLORS.TAG};
+  background: ${({ theme }) => theme.COLORS.TAG};
 
-  color: ${({theme}) => theme.COLORS.GRAY};
+  color: ${({ theme }) => theme.COLORS.GRAY};
 
-  &:hover{
+  &:hover {
     cursor: pointer;
-
   }
-
 `
