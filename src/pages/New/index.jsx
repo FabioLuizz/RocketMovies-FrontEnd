@@ -30,7 +30,6 @@ export function New() {
 
   function handleRemoveTag(deleted) {
     setTags(prevState => prevState.filter(tag => tag !== deleted))
-    navigate(-1)
   }
 
   function Message(event) {
@@ -111,6 +110,7 @@ export function New() {
               <MovieItem
                 placeholder="Novo Marcador"
                 isNew
+                value={newTag}
                 onChange={e => setNewTag(e.target.value)}
                 onClick={tags.length <= 6 ? (handleAddTag) : (Message)}
               />
