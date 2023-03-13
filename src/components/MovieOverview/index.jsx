@@ -8,6 +8,8 @@ import { api } from '../../services/api'
 
 import { Tag } from '../Tag'
 
+import avatarPlaceholder from '../../assets/avatar_placeholder.svg'
+
 export function MovieOverview({ data, onChange, icon: Icon, ...rest}) {
   const { user } = useAuth()
 
