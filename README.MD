@@ -24,7 +24,7 @@ A ideia é criar uma aplicação Front-end onde o usuário adiciona um filme, pr
 ## Projeto
 
 - Figma do projeto disponível no [**Link**](https://www.figma.com/file/F94q8cGTiBRvHcSAHpAOTz/RocketMovies-(Copy)?node-id=0%3A1)
-
+- Projeto disponível no [**Link**](https://rocketmovies-fb.netlify.app/)
 
 
 
